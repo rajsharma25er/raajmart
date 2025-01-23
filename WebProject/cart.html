@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles2.css">
+    
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+
+       
+        <div class="cart-items">
+            <!-- Cart items will be dynamically inserted here via JavaScript -->
+        </div>
+
+        
+        <div class="total-price">
+            <h3>Total: ₹<span id="total-price">0</span></h3>
+        </div>
+
+       
+        <div class="button-container">
+            <button class="go-back-button" onclick="goBack()">Go Back</button>
+            <button class="Order"onclick="ordernow()">Order Now</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

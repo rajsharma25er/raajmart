@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="raaj.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="nav1">
+        <div class="navbar">
+            <div class="nav-logo border">
+                <a href="raaj.html" class="logo-link">
+                    <img src="sliderphotos/logo.png" alt="Logo" class="logo-image" />
+                </a>
+            </div>
+            
+            <div class="nav-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for Products..." class="search_input">
+                
+               
+            </div>
+        
+            <div class="user">
+                
+                <a href="login.html" class="login-link">Login</a>
+            </div>
+            <div class="cart" type="button">
+                <i class="fa-solid fa-cart-shopping" onclick="goToCart()"></i>
+                <span class="cart-count">0</span>
+
+            </div>
+          
+        </div>
+        <div class="pannel">
+            <div class="pannel-select">
+            <select>
+                <option value="default" disabled selected> Shop by Category </option>
+                <option>Fashion</option>
+                <option>Electronics</option>
+                <option> Foodgrains,Oil & Masala</option>
+                <option> Bakery,cakes & Dairy</option>
+                <option> Fruit & Vegetables</option> 
+                <option> Cleaning & Household</option>
+                <option> Soft Drinks & Juices</option>
+                <option>Beauty & Hygiene</option>
+
+            </select>
+            </div>
+            <div class="pannel-item border">
+                <a href="fashion.html" target="_blank"><p>Fashion</p></a>
+                <a href="electronics.html" target="_blank"><p>Electronics</p></a>
+                <a href="vegetables.html" target="_blank"><p>Fresh Vegetable</p></a>
+                <a href="chocolates.html" target="_blank"><p>Chocolates</p></a>
+                <a href="haircare.html" target="_blank"><p>Hair care</p></a>
+                <a href="rice.html" target="_blank"><p>Rice</p></a>
+                <a href="toys.html" target="_blank"><p>Toys</p></a>
+                <a href="beauty.html" target="_blank"><p>Beauty</p></a>
+            </div>
+            
+            <div class="offers">
+                <i class="fa-solid fa-tag" style="color: #28d5d7;"></i>
+                Offers & Deals
+            </div>
+            
+            
+
+        </div>
+    
+    </header>
+    <div class="items-container">
+        <h3 class="fashion-title">Fashion</h3>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="small-product-card">
+                <div class="discount-badge">73% OFF</div>
+                <img src="photos/tshirt3.webp" alt="Product Image">
+                <div class="small-product-title">Men Printed Round Neck Polyester Blue T-Shirt</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹269</div>
+                    <div class="discount-price">₹999</div>
+                </div>
+                <button class="add-button" data-product=" Men Printed Blue T-Shirt" data-price="269">ADD</button>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="small-product-card">
+                <div class="discount-badge">74% OFF</div>
+                <img src="photos/shirt1.webp" alt="Product Image">
+                <div class="small-product-title">Men Regular Fit Self Design Spread Collar Casual Shirt</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹389</div>
+                    <div class="discount-price">₹1499</div>
+                </div>
+                <button class="add-button" data-product=" Men Regular Casual Shirt" data-price="389">ADD</button>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="small-product-card">
+                <div class="discount-badge">83% OFF</div>
+                <img src="photos/tshirt1.webp" alt="Product Image">
+                <div class="small-product-title">Men Printed Round Neck Polyester Multicolor T-Shirt</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹249</div>
+                    <div class="discount-price">₹1499</div>
+                </div>
+                <button class="add-button" data-product="Men Printed T-Shirt" data-price="249">ADD</button>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="small-product-card">
+                <div class="discount-badge">60% OFF</div>
+                <img src="photos/jack1.png" alt="Product Image">
+                <div class="small-product-title">Men Regular Fit Solid Spread Collar Casual Shirt</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹1199</div>
+                    <div class="discount-price">₹2999</div>
+                </div>
+                <button class="add-button" data-product=" Men Regular Casual Shirt" data-price="1199">ADD</button>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="small-product-card">
+                <div class="discount-badge">35% OFF</div>
+                <img src="photos/jeans1.png" alt="Product Image">
+                <div class="small-product-title">Men Loose Fit Mid Rise Blue Jeans</div>
+                <div class="small-product-details">Size 30 32 34 36 40</div>
+                <div class="price-section">
+                    <div class="price">₹1949</div>
+                    <div class="discount-price">₹2999</div>
+                </div>
+                <button class="add-button" data-product="Men Blue Jeans" data-price="1949">ADD</button>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="small-product-card">
+                <div class="discount-badge">30% OFF</div>
+                <img src="photos/jeans2.webp" alt="Product Image">
+                <div class="small-product-title">Men Boot-Leg Mid Rise Grey Jeans</div>
+                <div class="small-product-details">Size 30 32 34 36 40</div>
+                <div class="price-section">
+                    <div class="price">₹1819</div>
+                    <div class="discount-price">₹2599</div>
+                </div>
+                <button class="add-button" data-product=" Men Boot-Leg Jeans" data-price="1819">ADD</button>
+            </div>
+            <!-- Product Card 7 -->
+            <div class="small-product-card">
+                <div class="discount-badge">71% OFF</div>
+                <img src="photos/jack2.png" alt="Product Image">
+                <div class="small-product-title">Men Colorblock Casual Jacket</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹729</div>
+                    <div class="discount-price">₹2599</div>
+                </div>
+                <button class="add-button" data-product=" Men Colorblock Casual Jacket" data-price="729">ADD</button>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="small-product-card">
+                <div class="discount-badge">42% OFF</div>
+                <img src="photos/women1.webp" alt="Product Image">
+                <div class="small-product-title">Women Bandhani, Geometric Print Cotton Rayon A-line Kurta</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹1739</div>
+                    <div class="discount-price">₹2999</div>
+                </div>
+                <button class="add-button" data-product=" Women Cotton Rayon A-line Kurta" data-price="1739">ADD</button>
+            </div>
+           <!-- Product Card 9 -->
+           <div class="small-product-card">
+            <div class="discount-badge">50% OFF</div>
+            <img src="photos/women2.png" alt="Product Image">
+            <div class="small-product-title">Women Colorblock Round Neck Cotton Blend Black, Blue T-Shirt</div>
+            <div class="small-product-details">Size S M L XL XXL</div>
+            <div class="price-section">
+                <div class="price">₹249</div>
+                <div class="discount-price">₹499</div>
+            </div>
+            <button class="add-button" data-product="Women Cotton Blue T-Shirt" data-price="249">ADD</button>
+        </div>
+        <!-- Product Card 10 -->
+        <div class="small-product-card">
+            <div class="discount-badge">28% OFF</div>
+            <img src="photos/women3.png" alt="Product Image">
+            <div class="small-product-title">Women Gown Black Dress</div>
+            <div class="small-product-details">Size S M L XL XXL</div>
+            <div class="price-section">
+                <div class="price">₹2149</div>
+                <div class="discount-price">₹2999</div>
+            </div>
+            <button class="add-button" data-product="Women Gown Black Dress " data-price="2149">ADD</button>
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

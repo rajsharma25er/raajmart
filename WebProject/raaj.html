@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaajMart</title>
+    <link rel="stylesheet" href="raaj.css"/>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="nav1">
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="raaj.html" class="logo-link">
+                    <img src="sliderphotos/logo.png" alt="Logo" class="logo-image" />
+                </a>
+            </div>
+            
+            <div class="nav-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for Products..." class="search_input">
+                
+               
+            </div>
+        
+            <div class="user">
+                
+                <a href="login.html" class="login-link">Login</a>
+            </div>
+            <div class="cart" type="button">
+                <i class="fa-solid fa-cart-shopping" onclick="goToCart()"></i>
+                <span class="cart-count">0</span>
+
+            </div>
+          
+        </div>
+        <div class="pannel">
+            <div class="pannel-select">
+                <select id="categorySelect">
+                    <option value="default" disabled selected>Shop by Category</option>
+                    <option value="fashion.html">Fashion</option>
+                    <option value="electronics.html">Electronics</option>
+                    <option value="foodgrains.html">Foodgrains, Oil & Masala</option>
+                    <option value="bakery.html">Bakery, Cakes & Dairy</option>
+                    <option value="fruits.html">Fruit & Vegetables</option>
+                    <option value="cleaning.html">Cleaning & Household</option>
+                    <option value="drinks.html">Soft Drinks & Juices</option>
+                    <option value="beauty.html">Beauty & Hygiene</option>
+                </select>
+                
+            </div>
+            <div class="pannel-item border">
+                <a href="fashion.html" target="_blank"><p>Fashion</p></a>
+                <a href="electronics.html" target="_blank"><p>Electronics</p></a>
+                <a href="vegetables.html" target="_blank"><p>Fresh Vegetable</p></a>
+                <a href="chocolates.html" target="_blank"><p>Chocolates</p></a>
+                <a href="haircare.html" target="_blank"><p>Hair care</p></a>
+                <a href="rice.html" target="_blank"><p>Rice</p></a>
+                <a href="toys.html" target="_blank"><p>Toys</p></a>
+                <a href="beauty.html" target="_blank"><p>Beauty</p></a>
+            </div>
+            
+            <div class="offers">
+                <i class="fa-solid fa-tag" style="color: #28d5d7;"></i>
+                Offers & Deals
+            </div>
+            
+            
+
+        </div>
+    
+    </header>
+    <div class="container">
+        <div class="slider">
+            <div class="image_list">
+                <img src="sliderphotos/image5.png" alt="image2" class="image_item">
+                <img src="sliderphotos/image2.jpg" alt="image1" class="image_item">
+                <img src="sliderphotos/image6.png" alt="image3" class="image_item">
+            
+                
+            </div>
+
+        </div>
+
+    </div>
+    <div class="items-container">
+        <h2>Top Offers & Deals</h2>
+        <div class="product-container">
+        
+            <div class="product-card">
+              <div class="discount-tag">77% OFF</div>
+              <img src="mainphoto/Tshirt.jpg" alt="Stylish T-Shirt" class="product-image">
+              <h2 class="product-title">Stylish T-Shirt</h2>
+        
+            </div>
+            <div class="product-card">
+              <div class="discount-tag">36% OFF</div>
+              <img src="mainphoto/Headphone.jpg" alt="Headphones" class="product-image">
+              <h2 class="product-title">Headphones</h2>
+              
+              
+            </div>
+            <div class="product-card">
+              <div class="discount-tag">57% OFF</div>
+              <img src="mainphoto/joyproducts.png" alt="skin care" class="product-image">
+              <h2 class="product-title">Skin Care</h2>
+              
+              
+            </div>
+            <div class="product-card">
+              <div class="discount-tag">40% OFF</div>
+              <img src="mainphoto/shoes.webp" alt="shoes" class="product-image">
+              <h2 class="product-title">Sport Shoes</h2>
+              
+              
+            </div>
+            <div class="product-card">
+              <div class="discount-tag">33% OFF</div>
+              <img src="mainphoto/kitchen set.png" alt="Kitchen" class="product-image">
+              <h2 class="product-title">Kitchen Set</h2>
+              
+              
+            </div>
+            
+          </div>
+    </div>
+    <div class="items-container">
+        <h3>Dry Fruits, Masala & Oil</h3>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="small-product-card">
+                <div class="discount-badge">15% OFF</div>
+                <img src="mainphoto/fortune.jpg" alt="Product Image">
+                <div class="small-product-title">Fortune Soya Health Refined Soyabean Oil</div>
+                <div class="small-product-details">1 x 1 L</div>
+                <div class="price-section">
+                    <div class="price">₹140</div>
+                    <div class="discount-price">₹165</div>
+                </div>
+                <button class="add-button" data-product=" Fortune Soya Health Refined 1L" data-price="140">ADD</button>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="small-product-card">
+                <div class="discount-badge">20% OFF</div>
+                <img src="mainphoto/tata Salt.jpg" alt="Product Image">
+                <div class="small-product-title">Tata Salt Vacuum Evaporated Iodised Salt</div>
+                <div class="small-product-details">1 x 1 Kg</div>
+                <div class="price-section">
+                    <div class="price">₹24</div>
+                    <div class="discount-price">₹30</div>
+                </div>
+                <button class="add-button" data-product=" Tata Salt 1Kg" data-price="24">ADD</button>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="small-product-card">
+                <div class="discount-badge">8% OFF</div>
+                <img src="mainphoto/Cashewws.webp" alt="Product Image">
+                <div class="small-product-title">Tata Sampann 100% Pure Premium Cashews Whole</div>
+                <div class="small-product-details">1 x 200g</div>
+                <div class="price-section">
+                    <div class="price">₹345</div>
+                    <div class="discount-price">₹375</div>
+                </div>
+                <button class="add-button" data-product="Tata Sampann Cashews Whole 200g" data-price="345">ADD</button>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="small-product-card">
+                <div class="discount-badge">26% OFF</div>
+                <img src="mainphoto/Turmeric Powder.webp" alt="Product Image">
+                <div class="small-product-title">Catch Turmeric Powder/Haldi</div>
+                <div class="small-product-details">1 x 1 Kg</div>
+                <div class="price-section">
+                    <div class="price">₹333</div>
+                    <div class="discount-price">₹450</div>
+                </div>
+                <button class="add-button" data-product="Catch Turmeric Haldi Powder 1Kg" data-price="333">ADD</button>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="small-product-card">
+                <div class="discount-badge">6% OFF</div>
+                <img src="mainphoto/jeera.webp" alt="Product Image">
+                <div class="small-product-title">Grihasthi Jeera/Cumin Powder - Premium, Natural & Pure</div>
+                <div class="small-product-details">1 x 200g</div>
+                <div class="price-section">
+                    <div class="price">₹161.68</div>
+                    <div class="discount-price">₹172</div>
+                </div>
+                <button class="add-button" data-product="Grihasthi Jeera Powder 200g" data-price="161.68">ADD</button>
+            </div>
+           
+
+        </div>
+
+    </div>
+    <div class="items-container">
+        <h3>Atta, Rice & Dal</h3>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="small-product-card">
+                <div class="discount-badge">25% OFF</div>
+                <img src="mainphoto/rice.webp" alt="Product Image">
+                <div class="small-product-title">Basmati Rice/Basmati Akki - Rozana Gold</div>
+                <div class="small-product-details">1 x 1 Kg</div>
+                <div class="price-section">
+                    <div class="price">₹90</div>
+                    <div class="discount-price">₹120</div>
+                </div>
+                <button class="add-button" data-product="Basmati Rice 1Kg" data-price="90">ADD</button>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="small-product-card">
+                <div class="discount-badge">17% OFF</div>
+                <img src="mainphoto/atta.webp" alt="Product Image">
+                <div class="small-product-title">Fortune Chakki Fresh Atta</div>
+                <div class="small-product-details">1 x 5 Kg</div>
+                <div class="price-section">
+                    <div class="price">₹190</div>
+                    <div class="discount-price">₹230</div>
+                </div>
+                <button class="add-button" data-product="Fortune Chakki Fresh Atta 5Kg" data-price="190">ADD</button>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="small-product-card">
+                <div class="discount-badge">16% OFF</div>
+                <img src="mainphoto/Cashewws.webp" alt="Product Image">
+                <div class="small-product-title">Tata Sampann Toor Dal</div>
+                <div class="small-product-details">1 x 1Kg</div>
+                <div class="price-section">
+                    <div class="price">₹209.16</div>
+                    <div class="discount-price">₹249</div>
+                </div>
+                <button class="add-button" data-product="Tata Sampann Toor Dal 1Kg " data-price="209.16">ADD</button>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="small-product-card">
+                <div class="discount-badge">3% OFF</div>
+                <img src="mainphoto/Suji.webp" alt="Product Image">
+                <div class="small-product-title">Fortune Suji</div>
+                <div class="small-product-details">1 x 500g</div>
+                <div class="price-section">
+                    <div class="price">₹37.83</div>
+                    <div class="discount-price">₹39</div>
+                </div>
+                <button class="add-button" data-product="Fortune Suji 500g" data-price="37.83">ADD</button>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="small-product-card">
+                <div class="discount-badge">33% OFF</div>
+                <img src="mainphoto/besan.webp" alt="Product Image">
+                <div class="small-product-title">Tata Sampann 100% Chana Dal Fine Besan/Gram Flour</div>
+                <div class="small-product-details">1 x 1 Kg</div>
+                <div class="price-section">
+                    <div class="price">₹116</div>
+                    <div class="discount-price">₹173</div>
+                </div>
+                <button class="add-button" data-product="Tata Sampann Chana Dal Fine Besan 1Kg" data-price="116">ADD</button>
+            </div>
+           
+
+        </div>
+
+    </div>
+    <div class="items-container">
+        <h3>Fashion Top Deals</h3>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="small-product-card">
+                <div class="discount-badge">67% OFF</div>
+                <img src="mainphoto/dress.webp" alt="Product Image">
+                <div class="small-product-title">Women Fit and Flare Yellow, White, Green Dress</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹660</div>
+                    <div class="discount-price">₹1999</div>
+                </div>
+                <button class="add-button" data-product="Women Fit and Flare Yellow,White, Green Dress" data-price="660">ADD</button>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="small-product-card">
+                <div class="discount-badge">82% OFF</div>
+                <img src="mainphoto/shirt2.webp" alt="Product Image">
+                <div class="small-product-title">Men Regular Fit Solid Spread Collar Casual Shirt</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹360</div>
+                    <div class="discount-price">₹1999</div>
+                </div>
+                <button class="add-button" data-price="360" data-product="Men Regular Fit Solid Spread Collar Casual Shirt">ADD</button>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="small-product-card">
+                <div class="discount-badge">52% OFF</div>
+                <img src="mainphoto/jeans1.webp" alt="Product Image">
+                <div class="small-product-title">Men Slim Mid Rise Blue Jeans</div>
+                <div class="small-product-details">Size 28 30 32 34 40</div>
+                <div class="price-section">
+                    <div class="price">₹1680</div>
+                    <div class="discount-price">₹3499</div>
+                </div>
+                <button class="add-button" data-product="Men Slim Mid Rise Blue Jeans" data-price="1680">ADD</button>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="small-product-card">
+                <div class="discount-badge">62% OFF</div>
+                <img src="mainphoto/jack1.webp" alt="Product Image">
+                <div class="small-product-title">Women Solid Padded Jacket</div>
+                <div class="small-product-details">Size S M L XL XXL</div>
+                <div class="price-section">
+                    <div class="price">₹1899</div>
+                    <div class="discount-price">₹4999</div>
+                </div>
+                <button class="add-button" data-product="Women Solid Padded Jacket" data-price="1899">ADD</button>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="small-product-card">
+                <div class="discount-badge">61% OFF</div>
+                <img src="mainphoto/boot.webp" alt="Product Image">
+                <div class="small-product-title">Boots,Casual,Party Wear, Daily Wear, Trendy</div>
+                <div class="small-product-details">Size 5 6 7 8 9 </div>
+                <div class="price-section">
+                    <div class="price">₹779</div>
+                    <div class="discount-price">₹1999</div>
+                </div>
+                <button class="add-button" data-product="Boots,Casual,Party Wear" data-price="779">ADD</button>
+            </div>
+           
+
+        </div>
+
+    </div>
+    <div class="items-container">
+        <h3>Beauty & Cosmetics</h3>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="small-product-card">
+                <div class="discount-badge">50% OFF</div>
+                <img src="mainphoto/Nivea coco.png" alt="Product Image">
+                <div class="small-product-title">NIVEA Cocoa Nourish oil in Lotion Moisturizer</div>
+                <div class="small-product-details">1 x 400ml</div>
+                <div class="price-section">
+                    <div class="price">₹275</div>
+                    <div class="discount-price">₹550</div>
+                </div>
+                <button class="add-button" data-product="NIVEA Cocoa Nourish oil Moisturizer 400ml" data-price="275">ADD</button>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="small-product-card">
+                <div class="discount-badge">40% OFF</div>
+                <img src="mainphoto/mens.webp" alt="Product Image">
+                <div class="small-product-title">Garnier Men Turbo Bright Double Action Face Wash </div>
+                <div class="small-product-details">1 x 300g</div>
+                <div class="price-section">
+                    <div class="price">₹478</div>
+                    <div class="discount-price">₹798</div>
+                </div>
+                <button class="add-button" data-product="Garnier Men  Face Wash 2 Pack 150g" data-price="478">ADD</button>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="small-product-card">
+                <div class="discount-badge">52% OFF</div>
+                <img src="mainphoto/naivesoft.webp" alt="Product Image">
+                <div class="small-product-title">NIVEA Soft Moisturizing Cream for all skin type </div>
+                <div class="small-product-details">1 x 300ml</div>
+                <div class="price-section">
+                    <div class="price">₹312</div>
+                    <div class="discount-price">₹650</div>
+                </div>
+                <button class="add-button" data-product="NIVEA Soft Moisturizing Cream 300g " data-price="312">ADD</button>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="small-product-card">
+                <div class="discount-badge">43% OFF</div>
+                <img src="mainphoto/parfum.png" alt="Product Image">
+                <div class="small-product-title">Wild Stone Ultra Sensual_Eau de Parfum</div>
+                <div class="small-product-details">1 x 100ml</div>
+                <div class="price-section">
+                    <div class="price">₹369</div>
+                    <div class="discount-price">₹649</div>
+                </div>
+                <button class="add-button" data-product="Wild Stone Ultra  Parfum 100ml" data-price="369">ADD</button>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="small-product-card">
+                <div class="discount-badge">63% OFF</div>
+                <img src="mainphoto/packow.png" alt="Product Image">
+                <div class="small-product-title">BLUE HEAVEN Bridal Makeup kit for women</div>
+                <div class="small-product-details">1 x 11 Pack</div>
+                <div class="price-section">
+                    <div class="price">₹499</div>
+                    <div class="discount-price">₹1350</div>
+                </div>
+                <button class="add-button" data-product="BLUE HEAVEN Bridal Makeup kit 11Pack" data-price="499">ADD</button>
+            </div>
+           
+
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>RaajMart</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">In News</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Careers At RaajMart</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Email</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

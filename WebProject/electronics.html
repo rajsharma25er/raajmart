@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="raaj.css"/>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="nav1">
+        <div class="navbar">
+            <div class="nav-logo border">
+                <a href="raaj.html" class="logo-link">
+                    <img src="sliderphotos/logo.png" alt="Logo" class="logo-image" />
+                </a>
+            </div>
+            
+            <div class="nav-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for Products..." class="search_input">
+                
+               
+            </div>
+        
+            <div class="user">
+                
+                <a href="login.html" class="login-link">Login</a>
+            </div>
+            <div class="cart" type="button">
+                <i class="fa-solid fa-cart-shopping" onclick="goToCart()"></i>
+                <span class="cart-count">0</span>
+
+            </div>
+          
+        </div>
+        <div class="pannel">
+            <div class="pannel-select">
+                <select id="categorySelect">
+                    <option value="default" disabled selected>Shop by Category</option>
+                    <option value="fashion.html">Fashion</option>
+                    <option value="electronics.html">Electronics</option>
+                    <option value="foodgrains.html">Foodgrains, Oil & Masala</option>
+                    <option value="bakery.html">Bakery, Cakes & Dairy</option>
+                    <option value="fruits.html">Fruit & Vegetables</option>
+                    <option value="cleaning.html">Cleaning & Household</option>
+                    <option value="drinks.html">Soft Drinks & Juices</option>
+                    <option value="beauty.html">Beauty & Hygiene</option>
+                </select>
+                
+            </div>
+            <div class="pannel-item border">
+                <a href="fashion.html" target="_blank"><p>Fashion</p></a>
+                <a href="electronics.html" target="_blank"><p>Electronics</p></a>
+                <a href="vegetables.html" target="_blank"><p>Fresh Vegetable</p></a>
+                <a href="chocolates.html" target="_blank"><p>Chocolates</p></a>
+                <a href="haircare.html" target="_blank"><p>Hair care</p></a>
+                <a href="rice.html" target="_blank"><p>Rice</p></a>
+                <a href="toys.html" target="_blank"><p>Toys</p></a>
+                <a href="beauty.html" target="_blank"><p>Beauty</p></a>
+            </div>
+            
+            <div class="offers">
+                <i class="fa-solid fa-tag" style="color: #28d5d7;"></i>
+                Offers & Deals
+            </div>
+            
+            
+
+        </div>
+    
+    </header>
+
+    <div class="items-container">
+        <h3 class="fashion-title">Electronics</h3>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="small-product-card">
+                <div class="discount-badge">71% OFF</div>
+                <img src="photos/soundbar.webp" alt="Product Image">
+                <div class="small-product-title">boAt Aavante Bar A1040 , EQ Modes & Remote Control 50w </div>
+                <div class="small-product-details">Size 50w 120w 160w</div>
+                <div class="price-section">
+                    <div class="price">₹2319</div>
+                    <div class="discount-price">₹7999</div>
+                </div>
+                <button class="add-button" data-product=" boAt Aavante Bar A1040 50w" data-price="2319">ADD</button>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="small-product-card">
+                <div class="discount-badge">32% OFF</div>
+                <img src="photos/hairdryer.png" alt="Product Image">
+                <div class="small-product-title">PHILIPS HP8120/00 Hair Dryer  (White, Pink) </div>
+                <div class="small-product-details">Size 1200w</div>
+                <div class="price-section">
+                    <div class="price">₹1085</div>
+                    <div class="discount-price">₹1595</div>
+                </div>
+                <button class="add-button" data-product=" PHILIPS HP8120/00 Hair Dryer 1200w" data-price="1085">ADD</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="small-product-card">
+                <div class="discount-badge">34% OFF</div>
+                <img src="photos/haircutteer.webp" alt="Product Image">
+                <div class="small-product-title">urbangabru Trimfinity Hair Trimmer Men (Black) </div>
+                <div class="small-product-details">Range: 0.5 - 12 mm</div>
+                <div class="price-section">
+                    <div class="price">₹1980</div>
+                    <div class="discount-price">₹3000</div>
+                </div>
+                <button class="add-button" data-product=" urbangabru Trimfinity 7000 Hair Trimmer" data-price="1980">ADD</button>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="small-product-card">
+                <div class="discount-badge">64% OFF</div>
+                <img src="photos/watch.png" alt="Product Image">
+                <div class="small-product-title">REDMI Watch 3 Active Bluetooth Calling </div>
+                <div class="small-product-details">Size Free Size</div>
+                <div class="price-section">
+                    <div class="price">₹2159</div>
+                    <div class="discount-price">₹5999</div>
+                </div>
+                <button class="add-button" data-product=" REDMI Watch 3" data-price="2159">ADD</button>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="small-product-card">
+                <div class="discount-badge">36% OFF</div>
+                <img src="photos/samsung.png" alt="Product Image">
+                <div class="small-product-title">SAMSUNG New D Series Brighter Crystal 4K Vivid 108 cm (43 inch) Ultra HD</div>
+                <div class="small-product-details">Size 32in 43in 55in</div>
+                <div class="price-section">
+                    <div class="price">₹28799</div>
+                    <div class="discount-price">₹44999</div>
+                </div>
+                <button class="add-button" data-product=" SAMSUNG D Series  4K Vivid 108 cm (43 inch)" data-price="28799">ADD</button>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+</html>

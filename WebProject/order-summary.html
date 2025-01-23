@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="order-summary.css">
+</head>
+<body>
+    <div class="order-summary-container">
+        <h1>Order Summary</h1>
+
+        <div class="address-section">
+            <h2>Shipping Address</h2>
+            <p><strong>Full Name:</strong> <span id="confirm-name"></span></p>
+            <p><strong>Address:</strong> <span id="confirm-address"></span></p>
+            <p><strong>City:</strong> <span id="confirm-city"></span></p>
+            <p><strong>State:</strong> <span id="confirm-state"></span></p>
+            <p><strong>ZIP Code:</strong> <span id="confirm-zip"></span></p>
+            <p><strong>Phone:</strong> <span id="confirm-phone"></span></p>
+            <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+        </div>
+
+        <div class="order-section">
+            <h2>Order Details</h2>
+            <div id="order-items">
+                <!-- Dynamically populated -->
+            </div>
+            <hr>
+            <p class="total-price"><strong>Total:</strong> ₹<span id="total-price">0.00</span></p>
+        </div>
+
+        <div class="button-container">
+            <button class="go-back-button" onclick="goBack()">Go Back</button>
+            <button class="submit-btn" onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+
+    <script src="order-summary.js"></script>
+</body>
+</html>
